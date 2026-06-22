@@ -1,5 +1,5 @@
 # MedTrack
-**Full-Stack Clinic Management System** · ACA Summer Project, IIT Kanpur · Team of 3
+**Full-Stack Clinic Management System** · Team of 2
 
 ---
 
