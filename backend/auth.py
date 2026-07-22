@@ -39,7 +39,7 @@ def current_user():
                 pass
     return g.user
 
-
+#authentication
 def login_required(f):
     @wraps(f)
     def wrapped(*args, **kwargs):
@@ -48,7 +48,7 @@ def login_required(f):
         return f(*args, **kwargs)
     return wrapped
 
-
+#autorization
 def role_required(*roles):
     def decorator(f):
         @wraps(f)
