@@ -32,7 +32,7 @@ def query(sql, params=(), one=False):
 
 def execute(sql, params=()):
     db = get_db()
-    cur = db.execute(sql, params)
+    cur = db.execute(sql, params) # (sql commands, tuple of actual data values)
     db.commit()
     last_id = cur.lastrowid
     cur.close()
