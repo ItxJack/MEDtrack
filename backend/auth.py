@@ -28,7 +28,7 @@ def decode_token(token):
 
 
 def current_user():
-    if "user" not in g:
+    if "user" not in g: # whenever a new http request is made older g object is erased and one g function lets us perform a function and other fn following it until a new http request is made.
         g.user = None
         auth = request.headers.get("Authorization", "")
         if auth.startswith("Bearer "):
