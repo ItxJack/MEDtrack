@@ -48,7 +48,7 @@ def login_required(f):
         return f(*args, **kwargs)
     return wrapped
 
-#autorization
+#authorization
 def role_required(*roles):
     def decorator(f):
         @wraps(f)
